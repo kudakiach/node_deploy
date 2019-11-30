@@ -1,0 +1,19 @@
+include ../partials/header 
+include ../partials/menu
+// main section
+div(class="container")
+	div(class="row")
+		div(class="col-md-4 offset-md-4" style="box-shadow:1px 2px 3px #cce; padding:30px")
+			h3(class="mb-5") Login
+			if message
+				div(class="alert alert-danger") #{message}
+			if failureFlash
+				div(class="alert alert-danger") #{failureFlash}
+			form(action="/login" method="post")
+				div(class="form-group")
+					label Username
+					input(type="text" class="form-control" placeholder="Username" name="username")
+				div(class="form-group")
+					label Password
+					input(type="password" class="form-control" placeholder="Password" name="password")
+				input(type="submit" name="submit" class="btn btn-custom btn-lg" value="Login")

@@ -1,0 +1,19 @@
+.bg-nav{
+	background-color:#404040 !important;
+}
+.nav-link{
+	color:#EC913C !important;
+}
+.box h3{
+	color:#EC913C;
+	text-transform: uppercase;
+}
+.btn-custom{
+	background-color: #EC913C;
+}
+.bg-custom{
+	background-color: #e0e0e0;
+}
+.text-cust{
+	color:#EC913C;
+}
